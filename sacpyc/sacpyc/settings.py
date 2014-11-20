@@ -37,6 +37,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sacpyc',
+    'cotizar',
+    'contactos',
 )
 
 MIDDLEWARE_CLASSES = (

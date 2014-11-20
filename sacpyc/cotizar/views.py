@@ -7,9 +7,9 @@ from django.views.generic import TemplateView
 #	context={'dicc1':'valor dicc 1'}
 #	return render(request,'sd/home.html',context)
 
-class Home(TemplateView):
-	def __init__(self, valor):
-		self.context = {'valor1':'','valor2':'','valor3':''}
+class Cotizar(TemplateView):
+	def __init__(self, valor):		
 		self.valor = valor
-	def home(self, request):
-		return render(request, 'sacpyc/home.html',self.context)
+	def cotizar(self, request):
+		context = {'valor1':'','valor2':'','valor3':''}
+		return render(request, 'cotizar/cotizar.html',context)

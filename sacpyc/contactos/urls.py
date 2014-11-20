@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-home
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-from .views import Home
+from .views import Contacto
 
 urlpatterns = patterns('',
     # Examples:
@@ -9,8 +9,5 @@ urlpatterns = patterns('',
 
     
     #url(r'^$','sd.views.home',name='home'), #pagina principal
-    url(r'^$',Home(0).home),
-    url(r'^cotizar/$',include('cotizar.urls')),
-    url(r'^contactos/$',include('contactos.urls')),
-    url(r'^admin/', include(admin.site.urls))
+    url(r'^mierda$',Contacto(0).llamada),
 )
