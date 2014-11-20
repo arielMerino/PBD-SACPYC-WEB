@@ -8,8 +8,7 @@ from django.views.generic import TemplateView
 #	return render(request,'sd/home.html',context)
 
 class Cotizar(TemplateView):
-	def __init__(self, valor):		
+	def __init__(self,valor): #cuando usas INIT, debes siempre inicializar todos tus objetos.
 		self.valor = valor
-	def cotizar(self, request):
-		context = {'valor1':'','valor2':'','valor3':''}
-		return render(request, 'cotizar/cotizar.html',context)
+	def llamadaCotizar(self,request):
+		return render(request, 'Cotizar/cotizar.html', {})
