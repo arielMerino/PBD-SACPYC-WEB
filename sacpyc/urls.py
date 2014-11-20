@@ -10,5 +10,4 @@ urlpatterns = patterns('',
     #url(r'^$','sd.views.home',name='home'), #pagina principal
     url(r'^$',Home.as_view()),
     url(r'^Cotizar/', include('Cotizar.urls')),
-    url(r'^Hola/',include('hola.urls'))
 )
