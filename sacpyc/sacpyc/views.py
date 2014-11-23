@@ -8,4 +8,8 @@ from django.views.generic import TemplateView
 #	return render(request,'sd/home.html',context)
 
 class Home(TemplateView):
-	template_name = "sacpyc/home.html"
+	def __init__(self, valor):
+		self.valor = valor
+		self.context = {}
+	def inicio(self,request):
+		return render(request,'sacpyc/home.html',self.context)

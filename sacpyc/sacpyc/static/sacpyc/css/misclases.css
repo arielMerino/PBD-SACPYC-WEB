@@ -62,13 +62,15 @@ html,body{
 }
 #footer{
 	position: absolute;
+	margin: 0;
+	padding: 0;
 	bottom:0;
 	width: 100%;
-	height: 100px;
+	height: 70px;
 }
 #body{
 	padding: 10px;
-	padding-bottom: 100px;
+	padding-bottom: 70px;
 }
 #cuerpo{
 	position:inherit;

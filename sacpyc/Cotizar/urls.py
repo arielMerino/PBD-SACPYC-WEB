@@ -8,4 +8,6 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
 	url(r'^Cotizar/$', Cotizar("a").llamadaCotizar),
+	url(r'^CotizarEv/$',Cotizar("a").llamadaCotizarEv),
+	url(r'^CotizarCat/$',Cotizar("a").llamadaCotizarCat),
 )

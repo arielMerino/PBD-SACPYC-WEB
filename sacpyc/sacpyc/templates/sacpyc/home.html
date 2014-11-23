@@ -1,7 +1,6 @@
 {%extends "sacpyc/base.html"%}
-{%block titulo%}SACPYC{%endblock%}
+{%block titulo%}Nuestros productos{%endblock%}
 {%block body%}
-	<a href="Cotizar/Cotizar">LINK</a>
 	<div id="coffe-break" class="row">
 		<h2>Coffe-Breaks</h2>
 		<div class="row">
@@ -81,4 +80,8 @@
 {%endblock%}
 {%block js%}
 	<script type="text/javascript" src="/static/sacpyc/js/index.js"></script>
+	<script type="text/javascript">
+		document.getElementById('np').className="btn btn-default active";
+		botonMenu('coffe-break');
+	</script>
 {%endblock%}
