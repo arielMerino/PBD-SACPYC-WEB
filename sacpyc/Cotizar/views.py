@@ -63,6 +63,7 @@ class Cotizar(TemplateView):
 		blocke = request.POST.get('blocke')
 		dpto = request.POST.get('dpto')
 		fecha = request.POST.get('fecha')
+		hora = request.POST.get('hora')
 		duracion = request.POST.get('duracion')
 		invitados = request.POST.get('invitados')
 
@@ -76,6 +77,7 @@ class Cotizar(TemplateView):
 		self.context['blocke'] = blocke
 		self.context['dpto'] = dpto
 		self.context['fecha'] = fecha
+		self.context['hora'] = hora
 		self.context['duracion'] = duracion
 		self.context['invitados'] = invitados
 
@@ -89,6 +91,7 @@ class Cotizar(TemplateView):
 		print self.context['blocke']
 		print self.context['dpto']
 		print self.context['fecha']
+		print self.context['hora']
 		print self.context['duracion'] 
 		print self.context['invitados']
 		return render(request, 'Cotizar/cotizarCat.html', self.context)	

@@ -33,16 +33,18 @@
 			    	<div class="input-group date">
 			        	<input type="text" title="la fecha es obligatoria" name="fecha" class="form-control" required/><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
 			    	</div>
+			    	<label for="hora">Hora evento:</label>
+			    	<input title="ej: 20:30" type="time" name="hora" class="form-control" required/>
 			    	<label for="duracion">Duración Estimada: (horas)</label>
 		    		<input title="debe ingresar la duración estimada en horas" min="1" max="12" type="number" value="3" name="duracion" class="form-control" required/>
-					<label for="invitados" >Cantidad de invitados:</label>
-					<input title="debe ingresar la cantidad de invitados" name="invitados" type="number" min="1" max="500" class="form-control" value="100">
+					<label for="invitados" >Cantidad de Invitados:</label>
+					<input title="debe ingresar la cantidad de invitados" name="invitados" type="number" min="1" max="500" class="form-control" value="100" onclick="">
 				</div>
 				<div class="col-xs-3"></div>
 			</div>
 			<br>
 				<div class="col-xs-3" style="padding-left:0;">
-					<a href="javascript:history.back()">volver</a>
+					<a href="javascript:history.back()" class="btn-lat btn btn-default frente">volver</a>
 				</div>
 				<div class="col-xs-6"></div>
 				<div class="col-xs-3" style="padding-right:0;">
