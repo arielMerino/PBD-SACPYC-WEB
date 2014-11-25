@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'sacpyc',
     'Cotizar',
+    'contacto',
 )
 
 MIDDLEWARE_CLASSES = (

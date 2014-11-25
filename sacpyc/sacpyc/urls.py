@@ -6,4 +6,5 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$',Home(0).inicio),
     url(r'^Cotizar/', include('Cotizar.urls')),
+    url(r'^Contacto/',include('contacto.urls')),
 )
