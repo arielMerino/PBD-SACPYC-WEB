@@ -40,6 +40,9 @@ INSTALLED_APPS = (
     'Cotizar',
     'contacto',
     'Agenda',
+    'Compras',
+    'Garzones',
+    'CotizarAd',
 )
 
 MIDDLEWARE_CLASSES = (
