@@ -7,5 +7,9 @@ from django.template import RequestContext
 class Contacto(TemplateView):
 	def __init__(self,valor): #cuando usas INIT, debes siempre inicializar todos tus objetos.
 		self.valor = valor
+		self.context = {'nombre':'','email':'','comment':''}
 	def llamadaContacto(self,request):
-		return render(request,'contacto/contacto.html',{})
+		print self.context['nombre']
+		print self.context['email']
+		print self.context['comment']
+		return render(request,'contacto/contacto.html',self.context)
