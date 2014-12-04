@@ -39,7 +39,7 @@ INSTALLED_APPS = (
     'sacpyc',
     'Cotizar',
     'contacto',
-    'administrador',
+    'Agenda',
 )
 
 MIDDLEWARE_CLASSES = (

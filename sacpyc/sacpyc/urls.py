@@ -7,5 +7,5 @@ urlpatterns = [
     url(r'^$',Home(0).inicio),
     url(r'^Cotizar/', include('Cotizar.urls')),
     url(r'^Contacto/',include('contacto.urls')),
-    url(r'^Administrador/',include('administrador.urls')),
+    url(r'^Agenda/',include('Agenda.urls')),
 ]
