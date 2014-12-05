@@ -11,5 +11,8 @@ urlpatterns = [
     url(r'^Compras/',include('Compras.urls')),
     url(r'^Garzones/',include('Garzones.urls')),
     url(r'^CotizarAd/',include('CotizarAd.urls')),
-    
+    url(r'^TipoEvento/',include('TipoEvento.urls')),
+    url(r'^Proveedores/',include('Proveedores.urls')),
+    url(r'^Notificaciones/',include('Notificaciones.urls')),
+    url(r'^Menu/',include('Menu.urls')),
 ]

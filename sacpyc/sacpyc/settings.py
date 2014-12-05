@@ -43,6 +43,10 @@ INSTALLED_APPS = (
     'Compras',
     'Garzones',
     'CotizarAd',
+    'TipoEvento',
+    'Proveedores',
+    'Notificaciones',
+    'Menu',
 )
 
 MIDDLEWARE_CLASSES = (
